@@ -1,5 +1,5 @@
 Universe = vanilla
-executable = start.sh
+executable = singularity_start.sh
 output = logs/$$(cluster).$$(process).out
 error = logs/$$(cluster).$$(process).err
 log = logs/cluster.log
