@@ -43,17 +43,24 @@ tardis:
   Sites:
     - name: GridKa
       adapter: HTCondor
-      quota: 100 # CPU core quota
+      quota: 10 # CPU core quota
   
   GridKa:
     max_age: 1
     MachineTypes:
       - m1.small
+      - m8.small
     MachineTypeConfiguration:
       m1.small:
+        jdl: submit.jdl
+      m8.small:
         jdl: submit.jdl
     MachineMetaData:
       m1.small:
         Cores: 1
+        Memory: 2
+        Disk: 10
+      m8.small:
+        Cores: 8
         Memory: 16
-        Disk: 160
+        Disk: 80
