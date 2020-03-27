@@ -13,14 +13,9 @@ installed on your machine.
 
 We recommend to run `TARDIS` in a Python virtual environment
 
-* Install `virtualenv` if not available
-```bash
-$ python3 -m pip install virtualenv
-```
-
 * Create a new virtual environment
 ```bash
-$ python3 -m virtualenv tardis_tutorial
+$ python3 -m venv tardis_tutorial
 ```
 * Activate your virtual environment
 ```bash
