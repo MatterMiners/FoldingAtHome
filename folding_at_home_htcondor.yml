@@ -37,24 +37,24 @@ tardis:
   BatchSystem:
     adapter: FakeBatchSystem
     allocation: 1.0
-    utilization: 1.0
+    utilisation: 1.0
     machine_status: Available
   
   Sites:
     - name: GridKa
       adapter: HTCondor
-      quota: 10 # CPU core quota
+      quota: 100 # CPU core quota
   
   GridKa:
     max_age: 1
     MachineTypes:
       - m1.small
-      - m8.small
+      #- m8.small
     MachineTypeConfiguration:
       m1.small:
-        jdl: submit.jdl
+        jdl: submit_folding_single.jdl
       m8.small:
-        jdl: submit.jdl
+        jdl: submit_folding_multi.jdl
     MachineMetaData:
       m1.small:
         Cores: 1

@@ -10,9 +10,9 @@ RequiredBy=multi-user.target
 
 [Service]
 Type=simple
-User=tardis
-Group=tardis
-WorkingDirectory=/home/tardis/FoldingAtHome
-ExecStart=/home/tardis/FoldingAtHome/venv/bin/python3 -m cobald.daemon /home/tardis/FoldingAtHome/%i.yml
+User=giffels
+Group=giffels
+WorkingDirectory=/home/giffels/FoldingAtHome
+ExecStart=/home/giffels/venv/bin/python3 -m cobald.daemon /home/giffels/FoldingAtHome/%i.yml
 Restart=on-failure
 RestartSec=30s

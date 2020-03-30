@@ -1,0 +1,17 @@
+Universe = vanilla
+executable = singularity_start_folding.sh
+output = logs/$$(cluster).$$(process).out
+error = logs/$$(cluster).$$(process).err
+log = logs/cluster.log
+
++AcctGroup = "SCC.Corona.MC"
++AccountingGroup = "SCC.Corona.MC"
++AcctGroupUser = "giffels"
+
+environment=${Environment}
+
+request_cpus=${Cores}
+request_memory=${Memory}
+request_disk=${Disk}
+
+queue 1
