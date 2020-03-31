@@ -1,0 +1,20 @@
+Universe = vanilla
+executable = singularity_start_rosetta.sh
+output = logs/$$(cluster).$$(process).out
+error = logs/$$(cluster).$$(process).err
+log = logs/cluster.log
+
++AcctGroup = "SCC.Corona.SC"
++AccountingGroup = "SCC.Corona.SC"
++AcctGroupUser = "giffels"
+
+environment=${Environment}
+
+requirements=CpuFamily=?=23 
+transfer_output_files=""
+
+request_cpus=${Cores}
+request_memory=${Memory}
+request_disk=${Disk}
+
+queue 1
