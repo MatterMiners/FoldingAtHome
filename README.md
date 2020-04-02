@@ -15,11 +15,11 @@ We recommend to run `TARDIS` in a Python virtual environment
 
 * Create a new virtual environment
 ```bash
-$ python3 -m venv tardis_tutorial
+$ python3 -m venv fight_covid
 ```
 * Activate your virtual environment
 ```bash
-$ source tardis_tutorial/bin/activate
+$ source fight_covid/bin/activate
 ```
 
 ## Installation
@@ -35,7 +35,19 @@ All dependencies are automatically installed as well
 
 ```bash
 git clone https://github.com/MatterMiners/FoldingAtHome.git
-``` 
+```
+
+Adjust your settings in `*_at_home_condor.yml`, `singularity_start_*.sh` and
+`submit_*.jdl`. Please, have a look at the 
+[`TARDIS` Documentation](https://cobald-tardis.readthedocs.io/en/latest/) for
+any details. 
+
+## Container Images`
+### Rosetta@Home (Thanks to Thomas Hartmann)
+[https://confluence.desy.de/display/grid/BOINC+user+computing](https://confluence.desy.de/display/grid/BOINC+user+computing)
+
+### Folding@Home (Thanks to Lukas Heinrich)
+[https://github.com/lukasheinrich/folding-at-home-docker)](https://github.com/lukasheinrich/folding-at-home-docker)
 
 ## Start Job Factory
 ### To test your setup
